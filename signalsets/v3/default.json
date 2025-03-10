@@ -23,6 +23,10 @@
   "signals": [
     {"id": "MACHE_AAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Exterior temperature"}
   ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "48f9"}, "freq": 1,
+  "signals": [
+    {"id": "MACHE_HVBAT_AMP", "path": "Battery", "fmt": { "len": 16, "max": 600, "min": -600, "div": 50, "unit": "Amps" }, "name": "HV Battery Amperage"}
+  ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "4800"}, "freq": 10,
   "signals": [
     {"id": "MACHE_HVBAT_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "HV battery temperature"}
@@ -69,10 +73,6 @@
 { "hdr": "7E6", "rax": "7EE", "fcm1": true, "cmd": {"22": "1E1C"}, "freq": 5,
   "signals": [
     {"id": "MACHE_TT", "path": "Transmission", "fmt": { "len": 16, "max": 300, "min": -300, "div": 16, "sign": true, "unit": "celsius" }, "name": "Transmission temperature"}
-  ]},
-  { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "48f9"}, "freq": 1,
-  "signals": [
-    {"id": "MACHE_HVBAT_AMP", "path": "Battery", "fmt": { "len": 16, "max": 600, "min": -600 "div": 50, "unit": "Amps" }, "name": "HV Battery Amperage", "suggestedMetric": "HVB Amps"}
   ]}
 ]
 }
